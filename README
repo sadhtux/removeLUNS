@@ -1,0 +1,20 @@
+<h2> removeLUNS </h2> 
+Simple Bash Script que remueve las LUNs de un equipo productivo y el cual no
+puede ni debe ser reiniciado vía Multipath.
+
+<h2> Versionado </h2> 
+Versión inicial y funcional 1.0
+
+<h2> Funciones y adaptaciones pendientes </h2> 
+* Agregar estrutura de control para no ejecutar si no hay LUNS activas
+* Realizar el backup log de las LUNS actuales y Bloques una sola vez y solo adicionar una vez creado
+* Crear un log separado del listado de LUNS y bloques
+* Agregar compatibilidad con formatos (id largo de LUNS y ultimos 6 digitos)
+  Ejemplo: 
+.git/(360060e8012b078005040b07800 = 00a02d)
+.git/(360060e8012b078005040b07800 = 00a059)
+.git/(360060e8012b078005040b07800 = 00a005)
+* Hace el script compatible con parametros para pasarle las id de las luns (corta o larga)
+* Crear una flag para que no pregunte equivalente a un /force o /quiet (-f o --pass)
+* Finalmente crear compatibilidad con archivo de texto plano donde hayan mas de 10 luns para procesado por lotes.
+* Asegurar que funciona igual en todas las versiones de RHEL
