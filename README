@@ -1,11 +1,14 @@
-<h2> removeLUNS </h2> 
+removeLUNS
+----------
 Simple Bash Script que remueve las LUNs de un equipo productivo y el cual no
 puede ni debe ser reiniciado vía Multipath.
 
-<h2> Versionado </h2> 
+Versionado
+----------
 Versión inicial y funcional 1.0
 
-<h2> Funciones y adaptaciones pendientes </h2> 
+Funciones y adaptaciones pendientes
+-----------------------------------
 * Agregar estrutura de control para no ejecutar si no hay LUNS activas
 * Realizar el backup log de las LUNS actuales y Bloques una sola vez y solo adicionar una vez creado
 * Crear un log separado del listado de LUNS y bloques
